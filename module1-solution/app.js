@@ -1,7 +1,7 @@
 ( function(){
 'use strict';
 
-angular.module('LunchApp', [])
+angular.module('LunchCheck', [])
 .controller('LunchController', LunchController);
 
 LunchController.$inject = ['$scope']; //protects from minification
@@ -10,6 +10,7 @@ function LunchController($scope)
 {
     $scope.food = "";
     $scope.message = "";
+    $scope.placeholder = "List comma separated dishes you usually have for lunch";
 
 
     $scope.checkTooMuch = function () 
